@@ -140,8 +140,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-!/djangoPortfolio/settings.py
 .idea/sonarlint/
-!/djangoPortfolio/settings.py
 .idea/vcs.xml
-!/djangoPortfolio/settings.py
+/djangoPortfolio/settings.py
