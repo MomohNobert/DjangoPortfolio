@@ -2,6 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+      {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -56,7 +57,7 @@
                 <a class="nav-link" href="#">Twitter</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" href="{% static 'MomohNobertResume.pdf' %}">Resume</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
@@ -77,6 +78,7 @@ I can help you spin your way brilliantly out of the modern day Web.</p>
       <p>
         <a href="mailto:okhai0112@gmail.com" class="btn btn-primary my-2">Email me!</a>
       </p>
+<!--        <img src="{% static '20160704_112325.jpg.png' %}" />-->
     </div>
   </section>
 
