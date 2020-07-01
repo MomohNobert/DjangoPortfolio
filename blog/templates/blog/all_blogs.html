@@ -2,6 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+      {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -53,13 +54,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Twitter</a>
+                <a class="nav-link" href="https://twitter.com/_okhai_">Twitter</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" href="{% static 'MomohNobertResume.pdf' %}">Resume</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Blog</a>
+                <a class="nav-link active" href="{% url 'home' %}">Blog</a>
               </li>
             </ul>
           </div>
@@ -75,7 +76,7 @@
         {% for bl in blog.all %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-              <a href="https://google.com" class="">
+              <a href="{% url 'detail' bl.id %}" class="">
                   <img class="card-img-top" src="{{ bl.image.url }}" />
                   <div class="card-body">
                     <h3 class="card-text text-decoration-none text-dark">{{ bl.title }}</h3>
